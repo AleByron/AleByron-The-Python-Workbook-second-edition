@@ -1,0 +1,15 @@
+import math
+# distance = 6371.01*arccos(sin(t1)*sin(t2)*cos(t1)*cos(t2)*cos(g1 − g2))
+x, y = input("Insert latitude and longitude of the first position:").split()
+w, z = input("Insert latitude and longitude of the first position:").split()
+x = float(x)
+w = float(w)
+z = float(z)
+y = float(y)
+x = math.radians(x)
+y = math.radians(y)
+w = math.radians(w)
+z = math.radians(z)
+distance = 6371.01*math.acos(math.sin(x)*math.sin(y)*math.cos(x)*math.cos(y)*math.cos(w-z))
+print('The distance between the two points is:', distance, 'Km')
+

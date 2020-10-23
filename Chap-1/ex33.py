@@ -1,0 +1,7 @@
+a = int(input('Insert the first integer:'))
+b = int(input('Insert the second integer:'))
+c = int(input('Insert the third integer:'))
+x = min(a,b,c)
+y = max(a,b,c)
+z = (a+b+c)-(x+y)
+print('Min is:', x, 'max is:', y,'med is:', z)

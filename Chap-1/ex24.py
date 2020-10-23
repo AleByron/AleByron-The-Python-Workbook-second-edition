@@ -1,0 +1,8 @@
+d = int(input('Insert how many days your duration is:'))
+h = int(input('Insert how many hours your duration is:'))
+m = int(input('Insert how many minutes your duration is:'))
+s = int(input('Insert how many seconds your duration is:'))
+h = h + (d*24)
+m = m + (h*60)
+s = s + (m*60)
+print('Your duration in seconds is:', s)
